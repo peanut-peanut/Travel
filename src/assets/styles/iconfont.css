@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3356390 */
+  src: url('./iconfont/iconfont.eot?t=1650961510522'); /* IE9 */
+  src: url('./iconfont/iconfont.eot?t=1650961510522#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./iconfont/iconfont.woff2?t=1650961510522') format('woff2'),
+       url('./iconfont/iconfont.woff?t=1650961510522') format('woff'),
+       url('./iconfont/iconfont.ttf?t=1650961510522') format('truetype'),
+       url('./iconfont/iconfont.svg?t=1650961510522#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

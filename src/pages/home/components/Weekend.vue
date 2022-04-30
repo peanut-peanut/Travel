@@ -2,7 +2,7 @@
 	<div>
 		<div class="title">周末去哪儿</div>
 			<ul>
-				<li class="item border-bottom" v-for="(item,index) of weekendList" :key="index">
+				<li class="item border-bottom" v-for="(item,index) of list" :key="index">
 					<div class="item-img-wrapper">
 						<img class="item-img" :src=item.imgUrl>
 					</div>
@@ -17,32 +17,14 @@
 <script>
 export default {
 	name: 'HomeWeekend',
+	props: {
+		list: Array
+	},
 	data () {
 		return {
-			weekendList: [{
-				id: '0001',
-				imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg',
-				title: '寻找北京的皇城范儿',
-				desc: '数百年的宫廷庙宇，至今依旧威严霸气'
-			},{
-				id: '0002',
-				imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg',
-				title: '寻找北京的皇城范儿',
-				desc: '数百年的宫廷庙宇，至今依旧威严霸气'
-			},{
-				id: '0003',
-				imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg',
-				title: '寻找北京的皇城范儿',
-				desc: '数百年的宫廷庙宇，至今依旧威严霸气'
-			},{
-				id: '0004',
-				imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg',
-				title: '寻找北京的皇城范儿',
-				desc: '数百年的宫廷庙宇，至今依旧威严霸气'
-			}]
+			}
 		}
-	}
-}
+	} 
 </script>
 <style lang="stylus" scoped>
 	@import '~styles/iconfont/mixins.styl'

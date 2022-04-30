@@ -8,14 +8,17 @@
 			请输入城市/景点/游玩主题
 		</div>
 		<div class="header-right">
-			城市
+			{{this.city}}
 			<span class="iconfont arrow-right">&#xe6dc;</span>
 			</div>
 	</div>
 </template>
 <script>
 export default{
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  props: {
+    city: String
+  }
 }
 </script>
 <style lang="stylus" scoped>
@@ -48,6 +51,6 @@ export default{
 			float: right
 			text-align: center
 			.arrow-right
-				margin-left: -.04rem
+				margin-left: -.02rem
 				font-size: .24rem
 </style>

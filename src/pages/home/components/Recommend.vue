@@ -2,7 +2,7 @@
 	<div>
 		<div class="title">热门榜单</div>
 			<ul>
-				<li class="item border-bottom" v-for="(item,index) of recommendList" :key="index">
+				<li class="item border-bottom" v-for="(item,index) of list" :key="index">
 					<img class="item-img" :src=item.imgUrl>
 					<div class="item-info">
 						<p class="item-title">{{item.title}}</p>
@@ -16,29 +16,11 @@
 <script>
 export default {
 	name: 'HomeRecommend',
+	props: {
+		list: Array
+	},
 	data () {
 		return {
-			recommendList: [{
-				id: '0001',
-				imgUrl: 'https://imgs.qunarzz.com/sight/p0/2109/b5/b5f465a57e638f34a3.water.jpg_200x200_5418f6cc.jpg',
-				title: '北京环球度假区',
-				desc: '北京环球度假区包含七大主题景区、37处骑乘娱乐设施及地标景点、24场娱乐演出、80家餐饮及30家零售门店，总面积超4平方千米，一期占地159.57公顷；二期占地165.83公顷，计划建设包含中国元素的主题公园，引入中国文化和孙悟空等IP；三期计划建设水上乐园。'
-			},{
-				id: '0002',
-				imgUrl: 'https://imgs.qunarzz.com/sight/p0/2109/b5/b5f465a57e638f34a3.water.jpg_200x200_5418f6cc.jpg',
-				title: '北京环球度假区',
-				desc: '北京环球度假区包含七大主题景区、37处骑乘娱乐设施及地标景点、24场娱乐演出、80家餐饮及30家零售门店，总面积超4平方千米，一期占地159.57公顷；二期占地165.83公顷，计划建设包含中国元素的主题公园，引入中国文化和孙悟空等IP；三期计划建设水上乐园。'
-			},{
-				id: '0003',
-				imgUrl: 'https://imgs.qunarzz.com/sight/p0/2109/b5/b5f465a57e638f34a3.water.jpg_200x200_5418f6cc.jpg',
-				title: '北京环球度假区',
-				desc: '北京环球度假区包含七大主题景区、37处骑乘娱乐设施及地标景点、24场娱乐演出、80家餐饮及30家零售门店，总面积超4平方千米，一期占地159.57公顷；二期占地165.83公顷，计划建设包含中国元素的主题公园，引入中国文化和孙悟空等IP；三期计划建设水上乐园。'
-			},{
-				id: '0004',
-				imgUrl: 'https://imgs.qunarzz.com/sight/p0/2109/b5/b5f465a57e638f34a3.water.jpg_200x200_5418f6cc.jpg',
-				title: '北京环球度假区',
-				desc: '北京环球度假区包含七大主题景区、37处骑乘娱乐设施及地标景点、24场娱乐演出、80家餐饮及30家零售门店，总面积超4平方千米，一期占地159.57公顷；二期占地165.83公顷，计划建设包含中国元素的主题公园，引入中国文化和孙悟空等IP；三期计划建设水上乐园。'
-			}]
 		}
 	}
 }

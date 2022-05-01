@@ -1,17 +1,19 @@
 <template>
 		<div class="header">
-		<div class="header-left">
-			<div class="iconfont back-icon">&#xe601;</div>
-		</div>
-		<div class="header-input">
-			<span class="iconfont">&#xe600;</span>
-			请输入城市/景点/游玩主题
-		</div>
-		<div class="header-right">
-			{{this.city}}
-			<span class="iconfont arrow-right">&#xe6dc;</span>
+			<div class="header-left">
+				<div class="iconfont back-icon">&#xe601;</div>
 			</div>
-	</div>
+			<div class="header-input">
+				<span class="iconfont">&#xe600;</span>
+				请输入城市/景点/游玩主题
+			</div>
+			<router-link to='/city'>
+				<div class="header-right">
+					{{this.city}}
+					<span class="iconfont arrow-right">&#xe6dc;</span>
+				</div>
+			</router-link>
+		</div>
 </template>
 <script>
 export default{
@@ -26,8 +28,8 @@ export default{
 	/* 1rem = html font-size = 50px */
 	.header
 		display: flex
-		height: .86rem
-		line-height: .86rem
+		height: $HeaderHeight
+		line-height: $HeaderHeight
 		color: #fff
 		background-color: $bgColor
 		.header-left
@@ -50,6 +52,7 @@ export default{
 			width: 1.24rem
 			float: right
 			text-align: center
+			color: #fff
 			.arrow-right
 				margin-left: -.02rem
 				font-size: .24rem

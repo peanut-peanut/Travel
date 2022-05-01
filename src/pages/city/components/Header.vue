@@ -23,7 +23,7 @@ export default {
 		color: #fff
 		font-size: .32rem
 		.header-back
-			position: absolute
+			position: absolute 
 			width: .64rem
 			font-size: .4rem
 			color: #fff

@@ -1,6 +1,7 @@
 <template>
 	<div class="search">
-		<input class="search-input" type="text" placeholder="请输入城市名或拼音">
+		<input class="search-input" type="text" placeholder="请输入城市名或拼音" 
+		onfocus="this.placeholder=''" onblur="this.placeholder='请输入城市名或拼音'">
 	</div>
 </template>
 <script>
@@ -23,5 +24,4 @@ export default {
 			border-radius: .06rem
 			color: #666
 			padding: 0 .1rem
-			
 </style>
